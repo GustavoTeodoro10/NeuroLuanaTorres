@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- SEO (EDITÁVEL: título e descrição) -->
+  <title>Neuropsicóloga em Mauá | Luana Torres</title>
+  <meta name="description" content="Avaliação neuropsicológica de crianças e adolescentes em Mauá, com devolutiva clara para a família e orientação para a escola. Agende pelo WhatsApp.">
+  <meta name="theme-color" content="#f4f6f3">
+
+  <!-- Open Graph (prévia no WhatsApp e Instagram).
+       TODO após publicar: trocar og:url e og:image por endereços absolutos (https://seu-dominio/...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Luana Torres | Neuropsicóloga em Mauá">
+  <meta property="og:description" content="Avaliação neuropsicológica de crianças e adolescentes em Mauá. Nota 5,0 no Google com 71 avaliações.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon (gerado da foto de perfil dela, pois ainda não existe logotipo) -->
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Ícones Phosphor (família única, estilo preenchido) -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+
+  <!-- Tailwind CSS via CDN (utilitários de layout) -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { ink: '#0f2f2e', paper: '#f4f6f3', accent: '#c2501d' } } } };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Analytics: GoatCounter (sem cookies). Não alterar além do endereço. -->
+  <script data-goatcounter="https://teocode.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+  <!-- Dados estruturados (SEO local) com dados reais.
+       TODO após publicar: adicionar "url" com o endereço do site. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Luana Torres | Neuropsicóloga em Mauá",
+    "description": "Avaliação neuropsicológica de crianças e adolescentes em Mauá, SP.",
+    "telephone": "+55 11 98196-3725",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Álvares Machado, 281, 7º andar, sala 706, Vila Bocaina",
+      "addressLocality": "Mauá",
+      "addressRegion": "SP",
+      "postalCode": "09310-020",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -23.6692603, "longitude": -46.4554734 },
+    "sameAs": [
+      "https://www.instagram.com/neuropsiluana_torres/",
+      "https://autismoperto.com.br/especialista/4269-luana-torres-neuropsicologa-em-maua"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ======================= CABEÇALHO ======================= -->
+  <header class="site-header" id="topo">
+    <div class="container-x flex h-full items-center justify-between gap-6">
+      <!-- Nome em texto (sem logotipo): EDITÁVEL -->
+      <a class="brand" href="#inicio" aria-label="Luana Torres, neuropsicóloga. Voltar ao início">
+        <span class="brand-name">Luana Torres</span>
+        <span class="brand-role">Neuropsicóloga</span>
+      </a>
+
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Principal">
+        <a class="nav-link" href="#atendimento">Atendimento</a>
+        <a class="nav-link" href="#sobre">Sobre</a>
+        <a class="nav-link" href="#planos">Planos</a>
+        <a class="nav-link" href="#avaliacoes">Avaliações</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <!-- LINK: WhatsApp. Mensagem pré-programada no parâmetro text= -->
+        <a class="btn btn-primary btn-sm hidden lg:inline-flex" data-gc-event="cta-menu" target="_blank" rel="noopener"
+           href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>Falar no WhatsApp</a>
+        <button class="menu-btn lg:hidden" type="button" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+          <i class="ph-fill ph-list icon-open" aria-hidden="true"></i>
+          <i class="ph-fill ph-x icon-close" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Menu móvel">
+      <a class="m-link" style="--k:0" href="#atendimento">Atendimento</a>
+      <a class="m-link" style="--k:1" href="#sobre">Sobre</a>
+      <a class="m-link" style="--k:2" href="#planos">Planos</a>
+      <a class="m-link" style="--k:3" href="#avaliacoes">Avaliações</a>
+      <a class="m-link" style="--k:4" href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-primary mt-6 w-full" style="--k:5" data-gc-event="cta-menu" target="_blank" rel="noopener"
+       href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>Falar no WhatsApp</a>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container-x grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
+        <div class="lg:col-span-7">
+          <!-- TEXTO EDITÁVEL: título (frase do próprio post da Luana) -->
+          <h1 class="hero-title hero-in" id="hero-title" style="--i:0">Entender é o <span class="em">primeiro passo</span> para ajudar.</h1>
+          <p class="hero-sub hero-in mt-6" style="--i:1">Avaliação neuropsicológica de crianças e adolescentes em Mauá, com devolutiva clara para a família.</p>
+          <div class="hero-in mt-9 flex flex-wrap items-center gap-x-8 gap-y-3" style="--i:2">
+            <a class="btn btn-primary" data-gc-event="cta-hero" target="_blank" rel="noopener"
+               href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica%20para%20o%20meu%20filho%28a%29."><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>Falar no WhatsApp</a>
+            <a class="link-arrow" href="#atendimento">Como funciona a avaliação <i class="ph-fill ph-arrow-down" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <figure class="portrait-wrap hero-in" style="--i:1">
+            <div class="portrait-stage">
+              <span class="portrait-disc hero-disc-in" aria-hidden="true"></span>
+              <!-- Linha pontilhada: referência à parede do consultório dela -->
+              <svg class="portrait-squiggle" viewBox="0 0 400 70" fill="none" aria-hidden="true" focusable="false">
+                <path d="M4 35C44-5 76-5 104 35S164 75 204 35 264-5 304 35 364 75 396 35" stroke="#c2501d" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 13"/>
+              </svg>
+              <!-- IMAGEM EDITÁVEL: retrato dela (origem: perfil do Google) -->
+              <img class="portrait-img" src="assets/img/luana-torres.webp" width="720" height="720"
+                   alt="Luana Torres, psicóloga e neuropsicóloga, sorrindo, sentada em uma poltrona preta com blazer preto" fetchpriority="high">
+            </div>
+            <figcaption class="portrait-caption">
+              <strong>Luana Torres</strong>
+              <span>Psicóloga e neuropsicóloga, CRP 06/167624</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= FAIXA DE AVALIAÇÕES (único marquee) ======================= -->
+    <section class="review-strip on-dark" aria-label="Avaliações no Google">
+      <div class="container-x strip-inner">
+        <!-- LINK: perfil dela no Google com as avaliações -->
+        <a class="strip-badge" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/place/Luana+Torres+%7C+Neuropsic%C3%B3loga+em+Mau%C3%A1/@-23.6692603,-46.4554734,17z/data=!4m8!3m7!1s0x94ce69aa11271911:0x98e0460874d4bbb9!8m2!3d-23.6692603!4d-46.4554734!9m1!1b1!16s%2Fg%2F11n3xqbj42"
+           aria-label="Nota 5,0 no Google, 71 avaliações. Abrir no Google">
+          <span class="score">5,0</span>
+          <span>
+            <span class="stars" role="img" aria-label="5 estrelas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <span class="meta block">71 avaliações no Google</span>
+          </span>
+        </a>
+        <!-- TEXTOS EDITÁVEIS: trechos literais de avaliações reais -->
+        <div class="marquee">
+          <div class="marquee-track">
+            <div class="marquee-group">
+              <span class="marquee-item">Muito humana, trata os seus pacientes com muito carinho e respeito</span>
+              <span class="marquee-item">Finalmente conseguimos clareza sobre o diagnóstico e os encaminhamentos</span>
+              <span class="marquee-item">Transmite segurança e cuidado em cada atendimento</span>
+              <span class="marquee-item">Explicando tudo com clareza e paciência</span>
+              <span class="marquee-item">Total confiança no trabalho realizado, especialmente nos laudos e orientações</span>
+              <span class="marquee-item">Transmitir informações complexas de forma didática e clara</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ATENDIMENTO ======================= -->
+    <section class="section" id="atendimento" aria-labelledby="atendimento-title">
+      <div class="container-x grid gap-14 lg:grid-cols-12 lg:gap-10">
+        <div class="lg:col-span-5">
+          <div class="lg:sticky lg:top-28">
+            <div class="photo-frame reveal reveal-clip">
+              <!-- IMAGEM EDITÁVEL: sala de atendimento infantil (origem: perfil do Google) -->
+              <img src="assets/img/sala-atendimento-720.webp" srcset="assets/img/sala-atendimento-720.webp 720w, assets/img/sala-atendimento.webp 1080w"
+                   sizes="(min-width:1024px) 460px, 92vw" width="720" height="720" loading="lazy"
+                   alt="Sala de atendimento infantil com parede branca e um grande círculo laranja pintado, estantes com brinquedos, jogos e poltronas">
+            </div>
+            <p class="photo-caption reveal" style="--i:1">A sala de atendimento.</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 lg:pl-8">
+          <h2 class="reveal text-[clamp(2.1rem,4.4vw,3.5rem)]" id="atendimento-title">Como funciona a avaliação neuropsicológica</h2>
+          <p class="reveal mt-5 max-w-[52ch] text-[1.15rem] text-[color:var(--ink-2)]" style="--i:1">Investiga como a criança ou o adolescente pensa e aprende, e ajuda a direcionar o cuidado que ela precisa.</p>
+
+          <ul class="areas reveal" style="--i:2" aria-label="Áreas investigadas">
+            <li>Atenção</li><li>Memória</li><li>Raciocínio</li><li>Comunicação</li><li>Funções executivas</li>
+          </ul>
+
+          <!-- TEXTOS EDITÁVEIS: etapas, escritas a partir dos posts e do Google da Luana -->
+          <ol class="thread reveal reveal-thread mt-12">
+            <li style="--i:0">
+              <h3>As informações da família</h3>
+              <p>Os pais compartilham as informações que trazem sobre a criança, e a Luana soma a observação clínica.</p>
+            </li>
+            <li style="--i:1">
+              <h3>Testes e escalas</h3>
+              <p>São aplicados de acordo com a demanda de cada paciente.</p>
+            </li>
+            <li style="--i:2">
+              <h3>O contexto escolar</h3>
+              <p>As informações da escola e de outros profissionais que acompanham o paciente entram no cruzamento dos dados.</p>
+            </li>
+            <li style="--i:3">
+              <h3>A devolutiva com a família</h3>
+              <p>Os resultados são explicados de forma clara: pontos fortes, dificuldades e orientações para a família e a escola, com encaminhamentos quando necessário.</p>
+            </li>
+          </ol>
+
+          <p class="reveal mt-10 max-w-[52ch] text-[1.1rem]">A avaliação não é o fim do processo. É o início de um plano de cuidado mais direcionado às necessidades da criança.</p>
+          <div class="reveal mt-8">
+            <a class="btn btn-primary" data-gc-event="cta-atendimento" target="_blank" rel="noopener"
+               href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20entender%20como%20funciona%20a%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica."><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>Falar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SOBRE ======================= -->
+    <section class="pb-[clamp(4.5rem,9vw,8rem)]" id="sobre" aria-labelledby="sobre-title">
+      <div class="container-x">
+        <div class="about-panel on-accent reveal reveal-panel">
+          <span class="disc-ghost" aria-hidden="true"></span>
+          <div class="grid gap-12 lg:grid-cols-12 lg:items-end lg:gap-10">
+            <div class="lg:col-span-7">
+              <!-- TEXTOS EDITÁVEIS: baseados na legenda do Instagram da clínica -->
+              <h2 id="sobre-title">Um cuidado sob medida para cada criança.</h2>
+              <p class="mt-6">Luana Torres é psicóloga e neuropsicóloga. Caminha ao lado das famílias e constrói, junto com os pais, um acompanhamento atento aos detalhes de cada criança.</p>
+              <div class="mt-9">
+                <a class="btn btn-light" data-gc-event="cta-sobre" target="_blank" rel="noopener"
+                   href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20acompanhamento%20do%20meu%20filho%28a%29."><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>Falar no WhatsApp</a>
+              </div>
+            </div>
+            <ul class="cred-list lg:col-span-5">
+              <li><strong>Psicóloga</strong><span>CRP 06/167624</span></li>
+              <li><strong>Neuropsicóloga</strong><span>Faculdade Israelita Albert Einstein</span></li>
+              <li><strong>Foco</strong><span>Desenvolvimento infantil e avaliação neuropsicológica</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= FORMAS DE ATENDIMENTO ======================= -->
+    <section class="pb-[clamp(4.5rem,9vw,8rem)]" id="planos" aria-labelledby="planos-title">
+      <div class="container-x max-w-[1000px]">
+        <h2 class="reveal text-[clamp(2.1rem,4.4vw,3.5rem)]" id="planos-title">Formas de atendimento</h2>
+        <p class="reveal mt-5 max-w-[52ch] text-[1.15rem] text-[color:var(--ink-2)]" style="--i:1">Conte a sua situação pelo WhatsApp e receba as informações e os valores de cada opção.</p>
+
+        <!-- TEXTOS EDITÁVEIS: nomes das opções (o que cada uma inclui ainda não foi informado) -->
+        <ul class="plans mt-12">
+          <li class="plan-row reveal">
+            <h3>Sessão pontual</h3>
+            <p>Atendimento avulso, sem plano.</p>
+            <a class="btn btn-outline btn-sm" data-gc-event="cta-plano-pontual" target="_blank" rel="noopener"
+               href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20sess%C3%A3o%20pontual.">Pedir informações <i class="ph-fill ph-arrow-up-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="plan-row reveal">
+            <h3>Plano 90 dias</h3>
+            <p>Plano com duração de 90 dias.</p>
+            <a class="btn btn-outline btn-sm" data-gc-event="cta-plano-90-dias" target="_blank" rel="noopener"
+               href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20plano%20de%2090%20dias.">Pedir informações <i class="ph-fill ph-arrow-up-right" aria-hidden="true"></i></a>
+          </li>
+          <li class="plan-row reveal">
+            <h3>Plano 180 dias</h3>
+            <p>Plano com duração de 180 dias.</p>
+            <a class="btn btn-outline btn-sm" data-gc-event="cta-plano-180-dias" target="_blank" rel="noopener"
+               href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20plano%20de%20180%20dias.">Pedir informações <i class="ph-fill ph-arrow-up-right" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= AVALIAÇÕES (prova social) ======================= -->
+    <section class="reviews-bg section" id="avaliacoes" aria-labelledby="avaliacoes-title">
+      <div class="container-x">
+        <div class="flex flex-wrap items-end gap-x-10 gap-y-6">
+          <p class="score-big reveal" aria-hidden="true">5,0</p>
+          <div class="reveal" style="--i:1">
+            <span class="stars pop-on-view text-[1.3rem]" role="img" aria-label="5 estrelas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <h2 class="mt-2 text-[clamp(1.8rem,3.4vw,2.8rem)]" id="avaliacoes-title">O que as famílias dizem</h2>
+            <p class="mt-2 text-[color:var(--ink-2)]">71 avaliações no Google.</p>
+          </div>
+        </div>
+
+        <!-- TEXTOS EDITÁVEIS: avaliações reais do Google (trechos literais). Nomes abreviados. -->
+        <div class="masonry mt-12">
+          <figure class="review reveal">
+            <span class="stars" role="img" aria-label="5 estrelas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <blockquote>“Desde o primeiro contato me senti acolhido e seguro. Demonstra muito conhecimento e cuidado durante todo o atendimento, explicando tudo com clareza e paciência.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">R</span><span><span class="who block">Robson G.</span><span class="src"><i class="ph-fill ph-google-logo" aria-hidden="true"></i>Avaliação no Google</span></span></figcaption>
+          </figure>
+          <figure class="review reveal" style="--i:1">
+            <span class="stars" role="img" aria-label="5 estrelas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <blockquote>“Depois de passarmos em tantos profissionais, finalmente conseguimos clareza sobre o diagnóstico e os encaminhamentos adequados.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">D</span><span><span class="who block">Diego M.</span><span class="src"><i class="ph-fill ph-google-logo" aria-hidden="true"></i>Avaliação no Google</span></span></figcaption>
+          </figure>
+          <figure class="review reveal" style="--i:2">
+            <span class="stars" role="img" aria-label="5 estrelas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <blockquote>“Excelente profissional e muito humana, trata os seus pacientes com muito carinho e respeito, tivemos muitos avanços com a nossa filha.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">A</span><span><span class="who block">Aline A.</span><span class="src"><i class="ph-fill ph-google-logo" aria-hidden="true"></i>Avaliação no Google</span></span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="stars" role="img" aria-label="5 estrelas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <blockquote>“Um diferencial marcante do seu trabalho é a capacidade de transmitir informações complexas de forma didática e clara, garantindo que nós, como pais, compreendamos cada etapa do processo.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">S</span><span><span class="who block">Stephanie S.</span><span class="src"><i class="ph-fill ph-google-logo" aria-hidden="true"></i>Avaliação no Google</span></span></figcaption>
+          </figure>
+          <figure class="review reveal" style="--i:1">
+            <span class="stars" role="img" aria-label="5 estrelas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <blockquote>“Excelente profissional, muito responsável e dedicada. Tenho total confiança no trabalho realizado, especialmente nos laudos e orientações.”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">J</span><span><span class="who block">Jackeline N.</span><span class="src"><i class="ph-fill ph-google-logo" aria-hidden="true"></i>Avaliação no Google</span></span></figcaption>
+          </figure>
+          <figure class="review reveal" style="--i:2">
+            <span class="stars" role="img" aria-label="5 estrelas"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <blockquote>“Uma excelente profissional, muito competente e acolhedora. Transmite segurança e cuidado em cada atendimento. Recomendo!”</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">I</span><span><span class="who block">Isabelly C.</span><span class="src"><i class="ph-fill ph-google-logo" aria-hidden="true"></i>Avaliação no Google</span></span></figcaption>
+          </figure>
+        </div>
+
+        <div class="reveal mt-6 flex flex-wrap items-center gap-x-8 gap-y-4">
+          <a class="link-arrow" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/place/Luana+Torres+%7C+Neuropsic%C3%B3loga+em+Mau%C3%A1/@-23.6692603,-46.4554734,17z/data=!4m8!3m7!1s0x94ce69aa11271911:0x98e0460874d4bbb9!8m2!3d-23.6692603!4d-46.4554734!9m1!1b1!16s%2Fg%2F11n3xqbj42">Ver todas as avaliações no Google <i class="ph-fill ph-arrow-up-right" aria-hidden="true"></i></a>
+          <a class="btn btn-primary" data-gc-event="cta-avaliacoes" target="_blank" rel="noopener"
+             href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Li%20as%20avalia%C3%A7%C3%B5es%20no%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20conversa."><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTATO + LOCALIZAÇÃO ======================= -->
+    <section class="section" id="contato" aria-labelledby="contato-title">
+      <div class="container-x">
+        <div class="contact-panel on-dark reveal reveal-panel">
+          <div class="contact-copy">
+            <h2 id="contato-title">Vamos conversar?</h2>
+            <p class="mt-5 max-w-[40ch] text-[1.15rem]">Conte o que você tem observado e combine o melhor momento para o atendimento.</p>
+            <div class="mt-8">
+              <a class="btn btn-primary" data-gc-event="cta-contato" target="_blank" rel="noopener"
+                 href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20saber%20os%20hor%C3%A1rios%20dispon%C3%ADveis."><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>Falar no WhatsApp</a>
+            </div>
+
+            <!-- DADOS REAIS (Google Maps): endereço e telefone. Horários e e-mail não encontrados. -->
+            <ul class="contact-list">
+              <li>
+                <i class="ph-fill ph-map-pin" aria-hidden="true"></i>
+                <span>
+                  <address class="not-italic">R. Álvares Machado, 281, 7º andar, sala 706<br>Vila Bocaina, Mauá, SP, 09310-020</address>
+                  <a class="mt-1 inline-flex min-h-[44px] items-center gap-1 font-semibold" target="_blank" rel="noopener"
+                     href="https://www.google.com/maps/dir/?api=1&destination=-23.6692603,-46.4554734">Como chegar <i class="ph-fill ph-arrow-up-right" aria-hidden="true"></i></a>
+                </span>
+              </li>
+              <li>
+                <i class="ph-fill ph-phone" aria-hidden="true"></i>
+                <span><a href="tel:+5511981963725">(11) 98196-3725</a><br><span class="text-[0.95rem] opacity-80">Horários disponíveis: consulte pelo WhatsApp.</span></span>
+              </li>
+              <li>
+                <i class="ph-fill ph-instagram-logo" aria-hidden="true"></i>
+                <span><a target="_blank" rel="noopener" href="https://www.instagram.com/neuropsiluana_torres/">@neuropsiluana_torres</a></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="map-wrap">
+            <iframe title="Mapa com a localização do consultório da Luana Torres em Mauá" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=-23.6692603,-46.4554734&z=17&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= RODAPÉ ======================= -->
+  <footer class="site-footer">
+    <div class="container-x py-14">
+      <div class="grid gap-10 md:grid-cols-12">
+        <div class="md:col-span-5">
+          <p class="brand-name">Luana Torres</p>
+          <p class="mt-1 max-w-[34ch] text-[color:var(--ink-2)]">Psicóloga e neuropsicóloga em Mauá, SP. CRP 06/167624.</p>
+          <div class="mt-6 flex gap-3">
+            <a class="social" target="_blank" rel="noopener" href="https://www.instagram.com/neuropsiluana_torres/" aria-label="Instagram da Luana Torres"><i class="ph-fill ph-instagram-logo" aria-hidden="true"></i></a>
+            <a class="social" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Luana+Torres+%7C+Neuropsic%C3%B3loga+em+Mau%C3%A1/@-23.6692603,-46.4554734,17z" aria-label="Perfil da Luana Torres no Google"><i class="ph-fill ph-google-logo" aria-hidden="true"></i></a>
+            <a class="social" target="_blank" rel="noopener" href="https://autismoperto.com.br/especialista/4269-luana-torres-neuropsicologa-em-maua" aria-label="Perfil da Luana Torres no AutismoPerto"><i class="ph-fill ph-puzzle-piece" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <nav class="md:col-span-3" aria-label="Links rápidos">
+          <p class="font-semibold">Navegação</p>
+          <ul class="mt-2">
+            <li><a class="footer-link" href="#atendimento">Atendimento</a></li>
+            <li><a class="footer-link" href="#sobre">Sobre</a></li>
+            <li><a class="footer-link" href="#planos">Planos</a></li>
+            <li><a class="footer-link" href="#avaliacoes">Avaliações</a></li>
+            <li><a class="footer-link" href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="md:col-span-4">
+          <p class="font-semibold">Contato</p>
+          <ul class="mt-2">
+            <li><a class="footer-link" data-gc-event="cta-footer" target="_blank" rel="noopener"
+                   href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">WhatsApp (11) 98196-3725</a></li>
+            <li class="py-2 text-[color:var(--ink-2)]">R. Álvares Machado, 281, 7º andar, sala 706<br>Vila Bocaina, Mauá, SP, 09310-020</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-[rgb(15_47_46/0.15)] pt-6 text-center text-[0.95rem] text-[color:var(--ink-2)]">
+        <p>© 2026 Luana Torres - Todos os direitos reservados.</p>
+        <p class="mt-1">Site desenvolvido por <a class="font-semibold underline underline-offset-4" target="_blank" rel="noopener" href="https://teocode.com.br/">TeoCode</a> · © 2026 TeoCode</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a class="fab" data-gc-event="cta-flutuante" target="_blank" rel="noopener" aria-label="Falar com a Luana no WhatsApp"
+     href="https://wa.me/5511981963725?text=Ol%C3%A1%2C%20Luana%21%20Vi%20o%20seu%20site%20e%20gostaria%20de%20falar%20com%20voc%C3%AA."><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i></a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
